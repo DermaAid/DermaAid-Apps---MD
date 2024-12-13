@@ -1,0 +1,60 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <!-- FrameLayout sebagai container navigasi -->
+
+    <!-- BottomAppBar -->
+    <FrameLayout
+        android:id="@+id/navhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/white"
+        app:fabAlignmentMode="center"
+        app:fabCradleRoundedCornerRadius="12dp"
+        app:fabCradleVerticalOffset="10dp"
+        app:hideOnScroll="true"> <!-- Tambahkan efek sembunyi saat scroll -->
+
+    <!-- Bottom Navigation View -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="16dp"
+        app:menu="@menu/menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/trasparent" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <!-- Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_camera_24"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        app:maxImageSize="40dp"
+        app:layout_anchor="@id/nav"
+        app:layout_anchorGravity="center"
+        android:tint="@color/white"
+        android:contentDescription="@null"
+        android:importantForAccessibility="no"
+        app:tint="@color/lavender"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
