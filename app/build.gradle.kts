@@ -66,7 +66,7 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 
     implementation("io.coil-kt:coil:2.6.0")
-    implementation("com.github.bumptech.glide:glide:4.16.0")
+//    implementation("com.github.bumptech.glide:glide:4.16.0")
 
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
