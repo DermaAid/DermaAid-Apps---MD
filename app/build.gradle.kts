@@ -17,7 +17,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField("String", "NEWS_API_KEY", "\"d492263285db4b43b128bdb5b57ad1de\"")
-        buildConfigField("String", "NEWS_API_URL", "\"https://newsapi.org/v2\"")   }
+        buildConfigField("String", "NEWS_API_URL", "\"https://newsapi.org/v2/\"")   }
 
     buildTypes {
         release {
